@@ -15,6 +15,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "./src/index.html"),
         category: resolve(__dirname, "./src/categories.html"),
+        summary: resolve(__dirname, "./src/summary.html"),
       },
     },
   },
