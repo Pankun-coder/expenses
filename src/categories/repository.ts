@@ -9,7 +9,6 @@ const localStorageKey = "categoryRepository";
 
 const getFromLocalStorage = () => {
   const localStorageItem = localStorage.getItem(localStorageKey);
-  console.log(localStorageItem);
   if (localStorageItem === null) {
     return [];
   }

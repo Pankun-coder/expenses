@@ -43,7 +43,7 @@ const saveToLocalStorage = (expenses: Expense[]) => {
   });
   localStorage.setItem(
     localStorageKey,
-    JSON.stringify(stringifiableExpense.parse(escaped))
+    JSON.stringify(stringifiableExpense.array().parse(escaped))
   );
 };
 
