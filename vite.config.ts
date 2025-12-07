@@ -1,6 +1,7 @@
 import { dirname, resolve } from "path";
 import { fileURLToPath } from "url";
 import { defineConfig } from "vite";
+import { VitePWA } from "vite-plugin-pwa";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -17,4 +18,19 @@ export default defineConfig({
       },
     },
   },
+  plugins: [
+    VitePWA({
+      devOptions: {
+        enabled: true,
+      },
+      includeAssets: ["favicon.ico", "apple-touch.icon.png", "icon-512.png"],
+      manifest: {
+        name: "家計簿",
+        short_name: "家計簿",
+        description: "my 家計簿 app",
+        theme_color: "#FFFFFF",
+        icons: [{ src: "icon-512.png", sizes: "512x512", type: "image/png" }],
+      },
+    }),
+  ],
 });

@@ -13,7 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^24.10.1",
-    "vite": "^7.2.6"
+    "vite": "^7.2.6",
+    "vite-plugin-pwa": "^1.2.0"
   },
   "dependencies": {
     "zod": "^4.1.13"
