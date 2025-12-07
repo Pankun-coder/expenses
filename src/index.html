@@ -4,8 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="index.ts" type="module"></script>
   </head>
   <body>
-    hello
+    <form id="form">
+      <div>
+        <div>
+          <label for="amount">金額</label>
+          <input name="amount" id="amount" />
+        </div>
+        <div>
+          <label for="category">カテゴリ</label>
+          <select name="category" id="category"></select>
+        </div>
+        <button type="submit">OK</button>
+      </div>
+    </form>
   </body>
 </html>
